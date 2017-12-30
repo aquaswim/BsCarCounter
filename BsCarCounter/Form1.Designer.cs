@@ -39,13 +39,32 @@
             this.tibOriginal = new System.Windows.Forms.TabPage();
             this.ibOriginal = new Emgu.CV.UI.ImageBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblCarCount = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cbxCounting = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbCountingLanePosX = new System.Windows.Forms.TrackBar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbCountingLanePosY = new System.Windows.Forms.TrackBar();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbCountingLaneSizeWidth = new System.Windows.Forms.TrackBar();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbCountingLaneSizeHeight = new System.Windows.Forms.TrackBar();
+            this.cbxIncoming = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tbMinSize = new System.Windows.Forms.TrackBar();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbThreshold = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbErodeIter = new System.Windows.Forms.TrackBar();
-            this.tbDilateIter = new System.Windows.Forms.TrackBar();
             this.cbDilEroOrder = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbDilateIter = new System.Windows.Forms.TrackBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbErodeIter = new System.Windows.Forms.TrackBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblSpeed = new System.Windows.Forms.Label();
             this.tbUpdateInterval = new System.Windows.Forms.TrackBar();
@@ -57,25 +76,6 @@
             this.lblFIle = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
             this.ofdVideo = new System.Windows.Forms.OpenFileDialog();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbThreshold = new System.Windows.Forms.TrackBar();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cbxCounting = new System.Windows.Forms.CheckBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tbCountingLanePosX = new System.Windows.Forms.TrackBar();
-            this.tbCountingLanePosY = new System.Windows.Forms.TrackBar();
-            this.tbCountingLaneSizeWidth = new System.Windows.Forms.TrackBar();
-            this.tbCountingLaneSizeHeight = new System.Windows.Forms.TrackBar();
-            this.cbxIncoming = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tbMinSize = new System.Windows.Forms.TrackBar();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.lblCarCount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tibResult.SuspendLayout();
             this.tabResult.SuspendLayout();
@@ -86,16 +86,7 @@
             this.tibOriginal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ibOriginal)).BeginInit();
             this.panel1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbErodeIter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDilateIter)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUpdateInterval)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbVideoSeek)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbGaussianBlur)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbCountingLanePosX)).BeginInit();
@@ -103,7 +94,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbCountingLaneSizeWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbCountingLaneSizeHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMinSize)).BeginInit();
-            this.groupBox5.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbDilateIter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbErodeIter)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUpdateInterval)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbVideoSeek)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbGaussianBlur)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -160,7 +160,7 @@
             this.tabBs.Controls.Add(this.tibBS);
             this.tabBs.Location = new System.Drawing.Point(4, 22);
             this.tabBs.Name = "tabBs";
-            this.tabBs.Size = new System.Drawing.Size(770, 297);
+            this.tabBs.Size = new System.Drawing.Size(820, 297);
             this.tabBs.TabIndex = 2;
             this.tabBs.Text = "BS";
             this.tabBs.UseVisualStyleBackColor = true;
@@ -170,7 +170,7 @@
             this.ibBs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ibBs.Location = new System.Drawing.Point(0, 0);
             this.ibBs.Name = "ibBs";
-            this.ibBs.Size = new System.Drawing.Size(770, 297);
+            this.ibBs.Size = new System.Drawing.Size(820, 297);
             this.ibBs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ibBs.TabIndex = 3;
             this.ibBs.TabStop = false;
@@ -180,7 +180,7 @@
             this.tibBS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tibBS.Location = new System.Drawing.Point(0, 0);
             this.tibBS.Name = "tibBS";
-            this.tibBS.Size = new System.Drawing.Size(770, 297);
+            this.tibBS.Size = new System.Drawing.Size(820, 297);
             this.tibBS.TabIndex = 2;
             this.tibBS.TabStop = false;
             // 
@@ -190,7 +190,7 @@
             this.tibOriginal.Location = new System.Drawing.Point(4, 22);
             this.tibOriginal.Name = "tibOriginal";
             this.tibOriginal.Padding = new System.Windows.Forms.Padding(3);
-            this.tibOriginal.Size = new System.Drawing.Size(770, 297);
+            this.tibOriginal.Size = new System.Drawing.Size(820, 297);
             this.tibOriginal.TabIndex = 1;
             this.tibOriginal.Text = "Original";
             this.tibOriginal.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@
             this.ibOriginal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ibOriginal.Location = new System.Drawing.Point(3, 3);
             this.ibOriginal.Name = "ibOriginal";
-            this.ibOriginal.Size = new System.Drawing.Size(764, 291);
+            this.ibOriginal.Size = new System.Drawing.Size(814, 291);
             this.ibOriginal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ibOriginal.TabIndex = 2;
             this.ibOriginal.TabStop = false;
@@ -218,6 +218,171 @@
             this.panel1.Size = new System.Drawing.Size(828, 226);
             this.panel1.TabIndex = 1;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Controls.Add(this.lblCarCount);
+            this.groupBox5.Location = new System.Drawing.Point(724, 14);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(91, 75);
+            this.groupBox5.TabIndex = 4;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Car Count";
+            // 
+            // lblCarCount
+            // 
+            this.lblCarCount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCarCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblCarCount.Location = new System.Drawing.Point(3, 16);
+            this.lblCarCount.Name = "lblCarCount";
+            this.lblCarCount.Size = new System.Drawing.Size(85, 56);
+            this.lblCarCount.TabIndex = 0;
+            this.lblCarCount.Text = "0";
+            this.lblCarCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.flowLayoutPanel2);
+            this.groupBox4.Location = new System.Drawing.Point(9, 157);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(810, 60);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Counting Lane Control";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.cbxCounting);
+            this.flowLayoutPanel2.Controls.Add(this.label6);
+            this.flowLayoutPanel2.Controls.Add(this.tbCountingLanePosX);
+            this.flowLayoutPanel2.Controls.Add(this.label7);
+            this.flowLayoutPanel2.Controls.Add(this.tbCountingLanePosY);
+            this.flowLayoutPanel2.Controls.Add(this.label8);
+            this.flowLayoutPanel2.Controls.Add(this.tbCountingLaneSizeWidth);
+            this.flowLayoutPanel2.Controls.Add(this.label9);
+            this.flowLayoutPanel2.Controls.Add(this.tbCountingLaneSizeHeight);
+            this.flowLayoutPanel2.Controls.Add(this.cbxIncoming);
+            this.flowLayoutPanel2.Controls.Add(this.label10);
+            this.flowLayoutPanel2.Controls.Add(this.tbMinSize);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(804, 41);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // cbxCounting
+            // 
+            this.cbxCounting.AutoSize = true;
+            this.cbxCounting.Location = new System.Drawing.Point(3, 7);
+            this.cbxCounting.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
+            this.cbxCounting.Name = "cbxCounting";
+            this.cbxCounting.Size = new System.Drawing.Size(68, 17);
+            this.cbxCounting.TabIndex = 0;
+            this.cbxCounting.Text = "Counting";
+            this.cbxCounting.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(77, 8);
+            this.label6.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(14, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "X";
+            // 
+            // tbCountingLanePosX
+            // 
+            this.tbCountingLanePosX.Location = new System.Drawing.Point(97, 3);
+            this.tbCountingLanePosX.Name = "tbCountingLanePosX";
+            this.tbCountingLanePosX.Size = new System.Drawing.Size(80, 45);
+            this.tbCountingLanePosX.TabIndex = 5;
+            this.tbCountingLanePosX.ValueChanged += new System.EventHandler(this.ReCalcTrackBarCountingLane);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(183, 8);
+            this.label7.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Y";
+            // 
+            // tbCountingLanePosY
+            // 
+            this.tbCountingLanePosY.Location = new System.Drawing.Point(203, 3);
+            this.tbCountingLanePosY.Name = "tbCountingLanePosY";
+            this.tbCountingLanePosY.Size = new System.Drawing.Size(80, 45);
+            this.tbCountingLanePosY.TabIndex = 6;
+            this.tbCountingLanePosY.ValueChanged += new System.EventHandler(this.ReCalcTrackBarCountingLane);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(289, 8);
+            this.label8.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Width";
+            // 
+            // tbCountingLaneSizeWidth
+            // 
+            this.tbCountingLaneSizeWidth.Location = new System.Drawing.Point(330, 3);
+            this.tbCountingLaneSizeWidth.Name = "tbCountingLaneSizeWidth";
+            this.tbCountingLaneSizeWidth.Size = new System.Drawing.Size(80, 45);
+            this.tbCountingLaneSizeWidth.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(416, 8);
+            this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Height";
+            // 
+            // tbCountingLaneSizeHeight
+            // 
+            this.tbCountingLaneSizeHeight.Location = new System.Drawing.Point(460, 3);
+            this.tbCountingLaneSizeHeight.Name = "tbCountingLaneSizeHeight";
+            this.tbCountingLaneSizeHeight.Size = new System.Drawing.Size(80, 45);
+            this.tbCountingLaneSizeHeight.TabIndex = 8;
+            // 
+            // cbxIncoming
+            // 
+            this.cbxIncoming.AutoSize = true;
+            this.cbxIncoming.Location = new System.Drawing.Point(546, 7);
+            this.cbxIncoming.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
+            this.cbxIncoming.Name = "cbxIncoming";
+            this.cbxIncoming.Size = new System.Drawing.Size(102, 17);
+            this.cbxIncoming.TabIndex = 9;
+            this.cbxIncoming.Text = "Incoming Traffic";
+            this.cbxIncoming.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(654, 8);
+            this.label10.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "MinSize";
+            // 
+            // tbMinSize
+            // 
+            this.tbMinSize.Location = new System.Drawing.Point(704, 3);
+            this.tbMinSize.Maximum = 250;
+            this.tbMinSize.Name = "tbMinSize";
+            this.tbMinSize.Size = new System.Drawing.Size(80, 45);
+            this.tbMinSize.TabIndex = 11;
+            this.tbMinSize.Value = 100;
+            // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -230,25 +395,39 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "BS Control";
             // 
-            // label4
+            // flowLayoutPanel1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(406, 8);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Erosion";
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Controls.Add(this.tbThreshold);
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.cbDilEroOrder);
+            this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.tbDilateIter);
+            this.flowLayoutPanel1.Controls.Add(this.label4);
+            this.flowLayoutPanel1.Controls.Add(this.tbErodeIter);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(601, 37);
+            this.flowLayoutPanel1.TabIndex = 6;
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(272, 8);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Dilation";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 8);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Threshold";
+            // 
+            // tbThreshold
+            // 
+            this.tbThreshold.Location = new System.Drawing.Point(63, 3);
+            this.tbThreshold.Maximum = 255;
+            this.tbThreshold.Name = "tbThreshold";
+            this.tbThreshold.Size = new System.Drawing.Size(80, 45);
+            this.tbThreshold.TabIndex = 7;
             // 
             // label2
             // 
@@ -260,24 +439,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Type";
             // 
-            // tbErodeIter
-            // 
-            this.tbErodeIter.Location = new System.Drawing.Point(454, 3);
-            this.tbErodeIter.Maximum = 5;
-            this.tbErodeIter.Name = "tbErodeIter";
-            this.tbErodeIter.Size = new System.Drawing.Size(80, 45);
-            this.tbErodeIter.TabIndex = 2;
-            this.tbErodeIter.Value = 1;
-            // 
-            // tbDilateIter
-            // 
-            this.tbDilateIter.Location = new System.Drawing.Point(320, 3);
-            this.tbDilateIter.Maximum = 5;
-            this.tbDilateIter.Name = "tbDilateIter";
-            this.tbDilateIter.Size = new System.Drawing.Size(80, 45);
-            this.tbDilateIter.TabIndex = 1;
-            this.tbDilateIter.Value = 1;
-            // 
             // cbDilEroOrder
             // 
             this.cbDilEroOrder.Items.AddRange(new object[] {
@@ -288,6 +449,44 @@
             this.cbDilEroOrder.Name = "cbDilEroOrder";
             this.cbDilEroOrder.Size = new System.Drawing.Size(80, 21);
             this.cbDilEroOrder.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(272, 8);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Dilation";
+            // 
+            // tbDilateIter
+            // 
+            this.tbDilateIter.Location = new System.Drawing.Point(320, 3);
+            this.tbDilateIter.Maximum = 5;
+            this.tbDilateIter.Name = "tbDilateIter";
+            this.tbDilateIter.Size = new System.Drawing.Size(80, 45);
+            this.tbDilateIter.TabIndex = 1;
+            this.tbDilateIter.Value = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(406, 8);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Erosion";
+            // 
+            // tbErodeIter
+            // 
+            this.tbErodeIter.Location = new System.Drawing.Point(454, 3);
+            this.tbErodeIter.Maximum = 5;
+            this.tbErodeIter.Name = "tbErodeIter";
+            this.tbErodeIter.Size = new System.Drawing.Size(80, 45);
+            this.tbErodeIter.TabIndex = 2;
+            this.tbErodeIter.Value = 1;
             // 
             // groupBox2
             // 
@@ -399,206 +598,7 @@
             // 
             this.ofdVideo.DefaultExt = "Avi";
             this.ofdVideo.FileName = "video";
-            this.ofdVideo.Filter = "Video Files (*.avi)|*.avi";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.tbThreshold);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.cbDilEroOrder);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.tbDilateIter);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.tbErodeIter);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 16);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(601, 37);
-            this.flowLayoutPanel1.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 8);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Threshold";
-            // 
-            // tbThreshold
-            // 
-            this.tbThreshold.Location = new System.Drawing.Point(63, 3);
-            this.tbThreshold.Maximum = 255;
-            this.tbThreshold.Name = "tbThreshold";
-            this.tbThreshold.Size = new System.Drawing.Size(80, 45);
-            this.tbThreshold.TabIndex = 7;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Controls.Add(this.flowLayoutPanel2);
-            this.groupBox4.Location = new System.Drawing.Point(9, 157);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(810, 60);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Counting Lane Control";
-            // 
-            // cbxCounting
-            // 
-            this.cbxCounting.AutoSize = true;
-            this.cbxCounting.Location = new System.Drawing.Point(3, 7);
-            this.cbxCounting.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
-            this.cbxCounting.Name = "cbxCounting";
-            this.cbxCounting.Size = new System.Drawing.Size(68, 17);
-            this.cbxCounting.TabIndex = 0;
-            this.cbxCounting.Text = "Counting";
-            this.cbxCounting.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.cbxCounting);
-            this.flowLayoutPanel2.Controls.Add(this.label6);
-            this.flowLayoutPanel2.Controls.Add(this.tbCountingLanePosX);
-            this.flowLayoutPanel2.Controls.Add(this.label7);
-            this.flowLayoutPanel2.Controls.Add(this.tbCountingLanePosY);
-            this.flowLayoutPanel2.Controls.Add(this.label8);
-            this.flowLayoutPanel2.Controls.Add(this.tbCountingLaneSizeWidth);
-            this.flowLayoutPanel2.Controls.Add(this.label9);
-            this.flowLayoutPanel2.Controls.Add(this.tbCountingLaneSizeHeight);
-            this.flowLayoutPanel2.Controls.Add(this.cbxIncoming);
-            this.flowLayoutPanel2.Controls.Add(this.label10);
-            this.flowLayoutPanel2.Controls.Add(this.tbMinSize);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 16);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(804, 41);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(77, 8);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "X";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(183, 8);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(14, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Y";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(289, 8);
-            this.label8.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Width";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(416, 8);
-            this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Height";
-            // 
-            // tbCountingLanePosX
-            // 
-            this.tbCountingLanePosX.Location = new System.Drawing.Point(97, 3);
-            this.tbCountingLanePosX.Name = "tbCountingLanePosX";
-            this.tbCountingLanePosX.Size = new System.Drawing.Size(80, 45);
-            this.tbCountingLanePosX.TabIndex = 5;
-            this.tbCountingLanePosX.ValueChanged += new System.EventHandler(this.ReCalcTrackBarCountingLane);
-            // 
-            // tbCountingLanePosY
-            // 
-            this.tbCountingLanePosY.Location = new System.Drawing.Point(203, 3);
-            this.tbCountingLanePosY.Name = "tbCountingLanePosY";
-            this.tbCountingLanePosY.Size = new System.Drawing.Size(80, 45);
-            this.tbCountingLanePosY.TabIndex = 6;
-            this.tbCountingLanePosY.ValueChanged += new System.EventHandler(this.ReCalcTrackBarCountingLane);
-            // 
-            // tbCountingLaneSizeWidth
-            // 
-            this.tbCountingLaneSizeWidth.Location = new System.Drawing.Point(330, 3);
-            this.tbCountingLaneSizeWidth.Name = "tbCountingLaneSizeWidth";
-            this.tbCountingLaneSizeWidth.Size = new System.Drawing.Size(80, 45);
-            this.tbCountingLaneSizeWidth.TabIndex = 7;
-            // 
-            // tbCountingLaneSizeHeight
-            // 
-            this.tbCountingLaneSizeHeight.Location = new System.Drawing.Point(460, 3);
-            this.tbCountingLaneSizeHeight.Name = "tbCountingLaneSizeHeight";
-            this.tbCountingLaneSizeHeight.Size = new System.Drawing.Size(80, 45);
-            this.tbCountingLaneSizeHeight.TabIndex = 8;
-            // 
-            // cbxIncoming
-            // 
-            this.cbxIncoming.AutoSize = true;
-            this.cbxIncoming.Location = new System.Drawing.Point(546, 7);
-            this.cbxIncoming.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
-            this.cbxIncoming.Name = "cbxIncoming";
-            this.cbxIncoming.Size = new System.Drawing.Size(102, 17);
-            this.cbxIncoming.TabIndex = 9;
-            this.cbxIncoming.Text = "Incoming Traffic";
-            this.cbxIncoming.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(654, 8);
-            this.label10.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "MinSize";
-            // 
-            // tbMinSize
-            // 
-            this.tbMinSize.Location = new System.Drawing.Point(704, 3);
-            this.tbMinSize.Maximum = 250;
-            this.tbMinSize.Name = "tbMinSize";
-            this.tbMinSize.Size = new System.Drawing.Size(80, 45);
-            this.tbMinSize.TabIndex = 11;
-            this.tbMinSize.Value = 100;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Controls.Add(this.lblCarCount);
-            this.groupBox5.Location = new System.Drawing.Point(724, 14);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(91, 75);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Car Count";
-            // 
-            // lblCarCount
-            // 
-            this.lblCarCount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCarCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblCarCount.Location = new System.Drawing.Point(3, 16);
-            this.lblCarCount.Name = "lblCarCount";
-            this.lblCarCount.Size = new System.Drawing.Size(85, 56);
-            this.lblCarCount.TabIndex = 0;
-            this.lblCarCount.Text = "0";
-            this.lblCarCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ofdVideo.Filter = "Video Files (*.avi;*.mp4)|*.avi;*.mp4";
             // 
             // mainForm
             // 
@@ -619,19 +619,7 @@
             this.tibOriginal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ibOriginal)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tbErodeIter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbDilateIter)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUpdateInterval)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbVideoSeek)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbGaussianBlur)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
+            this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
@@ -640,7 +628,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbCountingLaneSizeWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbCountingLaneSizeHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMinSize)).EndInit();
-            this.groupBox5.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbDilateIter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbErodeIter)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUpdateInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbVideoSeek)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbGaussianBlur)).EndInit();
             this.ResumeLayout(false);
 
         }
